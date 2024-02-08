@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 # ให้ Flask มีตัวแปร global เพื่อเก็บที่เก็บรูปภาพของแต่ละกรอบรูป
 image_paths = {}
